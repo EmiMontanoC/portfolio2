@@ -6,10 +6,12 @@
 -->
 <html>
 	<head>
-		<title>Portfolio</title>
+		<title>Bienvenido a mi pagina</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+		<script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -25,13 +27,14 @@
 						<div class="content">
 							<div class="inner">
 								<h1>Emiliano Montaño Cuellar</h1>
-								<p>Welcome to my portfolio</p>
+								<p>Bienvenido a mi pagina personal</p>
+							</div>
 						</div>
 						<nav>
 							<ul>
-								<li><a href="#intro">Intro</a></li>
-								<li><a href="#work">Work</a></li>
-								<li><a href="#about">About</a></li>
+								<li><a href="#About">About</a></li>
+								<li><a href="#Curriculum">Curriculum</a></li>
+								<li><a href="#Portfolio">Portfolio</a></li>
 								<li><a href="#contact">Contact</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
@@ -42,26 +45,37 @@
 					<div id="main">
 
 						<!-- Intro -->
-							<article id="intro">
-								<h2 class="major">Intro</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+							<article id="About">
+								<h2 class="major">About</h2>
+								<span class="image main"><img src="images/Emi.jpeg" alt=""/></span>
+								<p> Hola soy Emiliano Montaño Cuellar, tengo 19 años, soy de Caborca/Son/Mex, actualmente estudiando en Hermosillo/Son/Mex la carrera de Ing. en Sistemas de Informacion, actualmente estoy experimentado con los lenguajes de Java,Python,JavaScript,C#, y ademas estoy trabajando en una libreria de Python(W.I.P), aqui esta mi Curriculum: <a href="#Curriculum">Curriculum</a>.</p>
 							</article>
 
 						<!-- Work -->
-							<article id="work">
-								<h2 class="major">Work</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+							<article id="Curriculum">
+								<h2 class="major">Curriculum</h2>
+								<span class="image main"><iframe src="images/Emiliano_Montaño_Cuellar_-_.pdf" width="100%" height="600px"></iframe></span>
+								<p>Aquí puedes ver mi curriculum vitae en formato PDF.</p>
 							</article>
-
 						<!-- About -->
-							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+							<article id="Portfolio">
+								<h2 class="major">Portfolio</h2>
+								<div class="video-container">
+									<video class="js-player" playsinline controls>
+										<source src="images/VID-20250919-WA0005.mp4" type="video/mp4"/>
+									</video>
+								</div>
+								<p>Pagina web local</p>
+								<div class="video-container">
+									<video class="js-player" playsinline controls>
+										<source src="images/Servidores mysql.mp4" type="video/mp4"/>
+									</video>
+								</div>
+								<p> servidor Mysql, hosting local</p>
+								<span class="image main"><img src="images/WIP.png" alt=""/></span>
+								<script>
+									const players = Plyr.setup('.js-player');
+								</script>
 							</article>
 
 						<!-- Contact -->
@@ -90,8 +104,8 @@
 								<ul class="icons">
 									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.instagram.com/emiliano_moncue" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://github.com/EmiMontanoC" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 								</ul>
 							</article>
 
