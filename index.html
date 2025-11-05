@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
 		<script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+		<script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -66,15 +67,16 @@
 									</video>
 								</div>
 								<p>Pagina web local</p>
-								<div class="video-container">
-									<video class="js-player" playsinline controls>
-										<source src="images/Servidores mysql.mp4" type="video/mp4"/>
-									</video>
+								<div class ="plyr__video-embeded" id="player">
+									<iframe src="https://youtu.be/fGaqPOMJCZw?si=iOWjqBSxrIHEHDC4" allowfullscreen allow="autoplay; encrypted-media"></iframe>
 								</div>
 								<p> servidor Mysql, hosting local</p>
 								<span class="image main"><img src="images/WIP.png" alt=""/></span>
 								<script>
 									const players = Plyr.setup('.js-player');
+								</script>
+								<script>
+									const player = new Plyr('#player,{youtube: {noCookie: true},});
 								</script>
 							</article>
 
@@ -372,3 +374,4 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 	</body>
 </html>
+
