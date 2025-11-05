@@ -67,16 +67,14 @@
 									</video>
 								</div>
 								<p>Pagina web local</p>
-								<div class ="plyr__video-embeded" id="player">
-									<iframe src="https://youtu.be/fGaqPOMJCZw?si=iOWjqBSxrIHEHDC4" allowfullscreen allow="autoplay; encrypted-media"></iframe>
+								<div class ="plyr__video-embed" id="player">
+									<iframe src="https://www.youtube.com/embed/fGaqPOMJCZw?si=sfPXN8uOpvYhD6iP" allowfullscreen allow="autoplay; encrypted-media"></iframe>
 								</div>
 								<p> servidor Mysql, hosting local</p>
 								<span class="image main"><img src="images/WIP.png" alt=""/></span>
 								<script>
 									const players = Plyr.setup('.js-player');
-								</script>
-								<script>
-									const player = new Plyr('#player,{youtube: {noCookie: true},});
+									const player = new Plyr('#player',{youtube: {noCookie: true}});
 								</script>
 							</article>
 
@@ -374,4 +372,5 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 	</body>
 </html>
+
 
